@@ -10,6 +10,7 @@ langchainhub = "*"
 python-dotenv = "*"
 black = "*"
 langchain-ollama = "*"
+serpapi = "*"
 
 [dev-packages]
 

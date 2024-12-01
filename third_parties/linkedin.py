@@ -11,7 +11,8 @@ def scrape_linkedin_profile(linked_profile_url: str, mock: bool = False):
     """scrape information from Linkedin profile,
     Manually scrape information from Linkedin profile"""
     if mock:
-        linked_profile_url = "https://gist.githubusercontent.com/ish-agarwal/aaf1b8ab37b44615acba3c3c88c1b5f8/raw/bed412ddfeb3f85e020aa6c28ab1cbe055adb03d/VJ.json"
+        # linked_profile_url = "https://gist.githubusercontent.com/ish-agarwal/aaf1b8ab37b44615acba3c3c88c1b5f8/raw/bed412ddfeb3f85e020aa6c28ab1cbe055adb03d/VJ.json"
+        linked_profile_url = "https://gist.githubusercontent.com/ish-agarwal/671c40b428f6d8a7b174e849d64d0505/raw/75a12e3118c9977ccbf0fa51779fa7d183f10233/Sanketh.json"
         response = requests.get(linked_profile_url, timeout=10)
     else:
         headers = {"Authorization": "Bearer " + os.environ.get("LINKEDIN_API_KEY")}
